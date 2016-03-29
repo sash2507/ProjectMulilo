@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project Mulilo</title>
+	<link rel="stylesheet" href="CSS/animate.css">
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="CSS/cntl.css">
+	<link rel="stylesheet" href="CSS/project.css">
+</head>
+
+<body>
+	<nav>			
+		<ul>
+			<li><img id="logo" src="IMG/mulilo.png"></li>
+			<li class="current"><a href="#landing-page">Home</a></li>
+			<li><a href="#our-approach">How We Work</a></li>
+			<li><a href="#why-cookstoves">Why Cookstoves?</a></li>
+			<li><a href="#donate">Donate</a></li>
+		</ul>
+	</nav>
+
+<section id = "landing-page">
+	<div id="video">
+		<video id="sunrise" autoplay loop src="IMG/sunrisevideo.mp4"></video>
+	</div>
+
+	<div class="about-us">
+		<p>Project Mulilo is a socially-innovative company that aims to provide clean cookstoves and revolutionize the way Zambians cook.<br>Smart for the environment, and smart for business.</p>
+	</div> 	
+</section>
+
+<section id="how-we-work">
+	<div id="our-approach">
+		<ul>
+			<li>A "market-based" approach that ensures that vulnerable populations have access to clean cooking solutions</li><br>
+			<li>A focus on high quality that is scalable 
+			</li><br>
+			<li>Commitment to technology</li><br>
+			<li>A focus on consumer needs and the role of women</li><br>
+			<li>Partnership development with local community, donors, investors</li><br>
+		</ul>
+	</div>
+</section>
+
+<section id="why-cookstoves">
+	<div id="benefits">
+		<p>Almost 3 billion people in the developing world cook on traditional cookstoves and open fires. That is close to one half of the world's population. An estimated 2 million people die annually due to exposure to harmful smoke from cooking. Charcoal - the fuel for traditional stoves - is produced by the rampant destruction of forests.</p>
+	</div>
+	<div id="slider">
+		<img src="IMG/landscape.jpg" alt="">
+		<img src="IMG/firewood.jpg" alt="">
+		<img src="IMG/stove.jpg" alt="">
+		<img src="IMG/charcoal.jpg" alt="">
+		<img src="IMG/kariba.jpg" alt="">
+		<img src="IMG/village.jpg" alt="">
+		<img src="IMG/luangwa.jpg" alt="">
+	</div>
+	<p id="scroll">How can clean cookstoves help? Scroll below...</p>
+	<div class="cntl">
+		<span class="cntl-bar cntl-center">
+			<span class="cntl-bar-fill"></span>
+	  	</span>
+
+	  	<div class="cntl-states">
+
+		  	<div class="cntl-state">
+				<div class="cntl-content">
+			   		<!-- <h4></h4> -->
+			    	<p>GHG Emissions.<br>A single household cooking with charcoal uses up to 4,000 lbs of firewood a year. By switching to a clean cookstove, it can eliminate firewood use and save up to 3 tons in annual CO2 emissions.</p>
+			     </div>
+			    <div class="cntl-icon cntl-center"></div>
+		    </div>
+
+		    <div class="cntl-state">
+		    	<div class="cntl-content">
+			        <h4></h4>
+			        <p>Environmental.<br>Firewood and charcoal cooking are often the leading drivers of deforestation, particularly in southern African countries. The use of clean cooking technologies can reduce negative impacts on forests, habitats, and biodiversity.</p>
+		      </div>
+		      <div class="cntl-icon cntl-center"></div>
+		    </div>
+
+		    <div class="cntl-state">
+		      <div class="cntl-content">
+		        <h4></h4>
+		        <p>Health.<br>Clean cookstoves and fuels are evidence-based, cost-effective methods to prevent and control diseases such as child pneumonia, lung cancer, chronic obstructive lung disease, and heart disease.</p>
+		      </div>
+		      <div class="cntl-icon cntl-center"></div>
+		    </div>
+
+		    <div class="cntl-state">
+				<div class="cntl-content">
+			   		<h4></h4>
+			    	<p>Women's Empowerment.<br>Cooking with clean cookstoves is significantly faster, more efficient and affords women and girls the time to pursue other activities. In addition, the cookstoves market offers women an opportunity to participate in and earn income from manufacturing, maintenance, marketing, distribution, sales and related enterprise.</p>
+			     </div>
+			    <div class="cntl-icon cntl-center"></div>
+		    </div>
+		</div>
+	</div>
+</section>
+
+<section id="donate">
+	<p id="thankyou">Thanks for doing your part to protect the environment!</p>
+	<input id="donation-amount" type="text" placeholder="enter an amount">
+	<button id="donate-button">Donate</button>
+	<div class="donate-box"></div>	
+</section>
+
+	<!-- Scripts -->
+	<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+	<script src="JS/Responsive-Vertical-Timeline-With-jQuery-CSS3/lib/jquery.cntl.js"></script>
+	<script src="JS/jquery.nav.js"></script>
+	<script src="JS/project.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("body").onePageNav({
+			// $('nav').onePageNav({  
+				scrollThreshold: 0.3
+			});
+		});
+	</script>
+
+</body>
+</html>
