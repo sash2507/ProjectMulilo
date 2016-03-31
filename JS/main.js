@@ -13,7 +13,7 @@ $(function()
 	    
 	        // If randomly-selected day is equal to current day...
 	        	// take the mod of (index + 1) and divide by array length and return that
-	       		// else return that day 	
+	       	// else return that day 	
 		        if (dayOfWeekPastIndex == dayOfWeekIndex) 
 		        {
 		          dayOfWeekPast = weekdays[(dayOfWeekPastIndex + 1) % weekdays.length];
